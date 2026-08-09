@@ -29,3 +29,15 @@ A Python automation script utilizing the Boto3 SDK to programmatically audit bot
 Run the script from an authenticated terminal session:
 (bash)
 python3 region_ec2_rds_inventory.py
+
+
+
+## Script 4: Global Multi-Region EC2 and RDS Inventory (`global_ec2_rds_inventory.py`)
+
+### Overview
+An advanced automation script that dynamically discovers all active AWS regions globally using the `describe_regions` API. It systematically loops through every region in the account to audit and aggregate both EC2 virtual machines and RDS relational databases worldwide, outputting a structured region-by-region report complete with instance states, database engines, and custom tags.
+
+### Usage
+Run the global infrastructure audit script from an authenticated terminal session:
+(bash)
+python3 global_ec2_rds_inventory.py
