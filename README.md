@@ -53,3 +53,15 @@ A Python automation script utilizing the Boto3 SDK to programmatically audit Ama
 Run the script from an authenticated terminal session:
 (bash)
 python3 ecs_inventory.py
+
+
+
+## Script 6: Global Multi-Region ECS Inventory (`global_ecs_inventory.py`)
+
+### Overview
+An advanced automation script that dynamically discovers all active AWS regions globally using the `describe_regions` API. It systematically loops through every region in the account to audit and aggregate Amazon ECS clusters, registered container instances, and active running tasks worldwide, providing a structured region-by-region inventory report.
+
+### Usage
+Run the global ECS audit script from an authenticated terminal session:
+(bash)
+python3 global_ecs_inventory.py
