@@ -65,3 +65,15 @@ An advanced automation script that dynamically discovers all active AWS regions 
 Run the global ECS audit script from an authenticated terminal session:
 (bash)
 python3 global_ecs_inventory.py
+
+
+
+## Script 7: Single-Region EKS Cluster Inventory (`eks_inventory.py`)
+
+### Overview
+A Python automation script utilizing the Boto3 SDK to programmatically audit Amazon EKS clusters within the session's active default region. It extracts core operational metadata including cluster health statuses, Kubernetes versions, API server endpoints, IAM role ARNs, and creation timestamps in a structured report.
+
+### Usage
+Run the script from an authenticated terminal session:
+(bash)
+python3 eks_inventory.py
