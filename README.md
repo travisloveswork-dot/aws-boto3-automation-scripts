@@ -77,3 +77,15 @@ A Python automation script utilizing the Boto3 SDK to programmatically audit Ama
 Run the script from an authenticated terminal session:
 (bash)
 python3 eks_inventory.py
+
+
+
+## Script 8: Global Multi-Region EKS Inventory (`global_eks_inventory.py`)
+
+### Overview
+An advanced automation script that dynamically discovers all active AWS regions globally using the `describe_regions` API. It systematically loops through every region in the account to audit and aggregate Amazon EKS clusters worldwide, outputting a structured region-by-region report containing operational statuses, Kubernetes versions, API endpoints, and timestamps.
+
+### Usage
+Run the global EKS audit script from an authenticated terminal session:
+(bash)
+python3 global_eks_inventory.py
