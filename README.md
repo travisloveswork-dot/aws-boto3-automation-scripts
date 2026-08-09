@@ -41,3 +41,15 @@ An advanced automation script that dynamically discovers all active AWS regions 
 Run the global infrastructure audit script from an authenticated terminal session:
 (bash)
 python3 global_ec2_rds_inventory.py
+
+
+
+## Script 5: Single-Region ECS Cluster and Task Inventory (`ecs_inventory.py`)
+
+### Overview
+A Python automation script utilizing the Boto3 SDK to programmatically audit Amazon ECS clusters, registered container instances, and active running tasks within the session's active default region. It extracts cluster health statuses, underlying EC2 instance mappings, launch types, and task execution states into a structured report.
+
+### Usage
+Run the script from an authenticated terminal session:
+(bash)
+python3 ecs_inventory.py
