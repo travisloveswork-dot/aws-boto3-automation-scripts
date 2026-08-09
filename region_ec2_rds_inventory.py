@@ -1,13 +1,10 @@
 import boto3
 
-# Define your target AWS region
-REGION = 'us-east-1'
+print("=== AWS Infrastructure Audit: EC2 & RDS (Default Region) ===\n")
 
-print(f"=== AWS Infrastructure Audit (EC2 & RDS) in Region: {REGION} ===\n")
-
-# 1. Audit EC2 Instances
+# 1. Audit EC2 Instances (natively using the default region)
 print("--- EC2 Instances ---")
-ec2 = boto3.resource('ec2', region_name=REGION)
+ec2 = boto3.resource('ec2')
 ec2_count = 0
 
 for instance in ec2.instances.all():
@@ -27,9 +24,9 @@ for instance in ec2.instances.all():
 
 print(f"Total EC2 instances found: {ec2_count}\n")
 
-# 2. Audit RDS Instances
+# 2. Audit RDS Instances (natively using the default region)
 print("--- RDS Database Instances ---")
-rds_client = boto3.client('rds', region_name=REGION)
+rds_client = boto3.client('rds')
 rds_count = 0
 
 try:
